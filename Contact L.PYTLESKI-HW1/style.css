@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: red;
+    font-size: 28pt;
+    font-family: Chiller;
+    text-align: center;
+}
+header {
+    background-color: #000;
+    color: black;
+    text-align: center;
+    padding: 1em 5%;
+    font-size: 40pt;
+    font-family: Impact;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-width: 5px;
+    text-fill-color: black;
+    text-stroke-color: red;
+    text-stroke-width: 5px;
+    text-shadow: -4px 4px #bd1000, 5px 4px #bd1000, 5px 5px #bd1000, -5px 5px #bd1000;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+p{
+    font-weight: bold;
+}
