@@ -1,0 +1,10 @@
+h1 {
+    text-decoration: underline;
+}
+body {
+    background-color: green;
+    color: white;
+    font-size: 20pt;
+    font-family: Arial;
+    text-align: center;
+}
