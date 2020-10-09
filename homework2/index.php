@@ -8,10 +8,11 @@
  * @author     Lawrence Pytleski <ljpytleski@hawkmail.hfcc.edu>
  * @version    2020.09.20
  * @link       https://cislinux.hfcc.edu/~ljpytleski/cis222/homework2/index.php
+ * @grade      9 / 10
  */
 
 $students = ["Rick", "Lester", "Barry", "Harold", "Leon"];
-$arrLength = $students;
+$arrLength = count($students);
 
 if( $students > 3 ){
     echo "We have enough students!<br><br>";
@@ -32,7 +33,8 @@ foreach( $students as $name ){
 
 echo '<br><h3>POST EXAMPLE:</h3>';
 
-var_dump($_POST);
+if( !is_null($_POST) )
+	var_dump($_POST);
 
 ?>
 
