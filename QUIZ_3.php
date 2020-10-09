@@ -6,7 +6,7 @@
  *
  * @category    PHP
  * @package     Quiz 3
- * @author      Chad Banks <crbanks1@hfcc.edu>
+ * @author      Lawrence Pytleski <ljpytleski@hawkmail.hfcc.edu>
  * @version     2020.10.01
  * @grade
  */
