@@ -1,0 +1,99 @@
+/**
+* @category   MySQL
+* @package    Homework 3
+* @author     Lawrence Pytleski <ljpytleski@hawkmail.hfcc.edu>
+* @version    2020.10.08
+* @grade
+*/
+
+USE ljpytleski;
+
+CREATE TABLE `Customers`(
+  `customer_id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `last_name` VARCHAR(255) NOT NULL,
+  `first_name` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(60) NOT NULL,
+  `password` VARCHAR(60) NOT NULL,
+  PRIMARY KEY (`customer_id`)
+);
+CREATE TABLE `Products`(
+  `product_id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `product_name` VARCHAR(255) NOT NULL,
+  `product_type` VARCHAR(30) NOT NULL,
+  PRIMARY KEY (`product_id`)
+);
+
+CREATE TABLE `Invoices`(
+  `invoice_id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `invoice_date` DATETIME NOT NULL,
+  `invoice_total` DECIMAL NOT NULL,
+  PRIMARY KEY (`invoice_id`)
+);
+
+DESCRIBE `Customers`;
+DESCRIBE `Products`;
+DESCRIBE `Invoices`;
+
+INSERT INTO `Customers`
+(
+  `customer_id`,
+  `last_name`,
+  `first_name`,
+  `email`,
+  `password`
+)
+VALUES
+(
+  NULL,
+  'Pytleski',
+  'Lawrence',
+  'ljpytleski@hawkmail.hfcc.edu',
+  'lester'
+);
+
+INSERT INTO `Products`
+(
+  `product_id`,
+  `product_name`,
+  `product_type`,
+  `product_quantity`
+)
+VALUES
+(
+  NULL,
+  'Rollins Band - End of Silence',
+  'CD',
+  NULL
+);
+
+INSERT INTO `Invoices`
+(
+  `invoice_id`,
+  `invoice_date`,
+  `invoice_total`
+)
+VALUES
+(
+  NULL,
+  NOW(),
+  NULL
+);
+
+UPDATE Customers
+SET first_name = 'Larry'
+WHERE 'customer_id' = NULL;
+UPDATE Products
+SET product_name = 'Deftones - Adrenaline'
+WHERE 'cproduct_id' = NULL;
+UPDATE Invoices
+SET invoice_total = '300'
+WHERE 'invoice_id' = NULL;
+
+SELECT last_name
+FROM Customers;
+SELECT product_name
+FROM Products;
+SELECT invoice_total
+FROM Invoices;
+
+DESCRIBE Customers
